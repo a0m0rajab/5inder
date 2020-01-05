@@ -1,0 +1,30 @@
+#whoarewe{
+    text-align: center;
+    padding: 50px ;
+    margin: 50px;
+    }
+    
+    .card-img-top {
+        border-radius: 50%;
+    
+    }
+    
+    #whatwedo{
+        padding: 50px 50px;
+        margin: 50px;
+    }
+
+    #dropusamessage{
+        padding: 50px; 
+        margin: 50px;
+
+    }
+    
+    #allcards{
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        width: 25% 25% 25% 25%;
+        padding:100px;
+    }
+    
