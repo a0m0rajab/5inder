@@ -1,5 +1,40 @@
-.container {
+/* .container {
     display: grid;
     grid-template-rows: 4;
     grid-template-columns: 25%;
+} */
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+    /* background-color: #494ca2; */
+}
+.card-header{
+    font-size: 2em;;
+}
+
+.card-title{
+    font-size: 1.5em;
+}
+.card-text{
+    
+    font-size: 1.1em;
+}
+.container,.card {
+    
+    background-color: #494ca2;
+    color: #fff;
+    border:none;
+}
+.card-img {
+   
+    border-radius: 5em;
+    height: 480px;
+}
+.col-md-6{
+    padding: 1px;
 }
