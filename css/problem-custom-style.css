@@ -2,6 +2,36 @@ body{
     font-family: 'Noto Serif', serif;
     /* background-color: #494ca2; */
 }
+
+.nav-item{
+    text-shadow: 2px 2px 10px rgb(143, 139, 139);
+}
+.navbar {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom:1px solid oldlace;
+   
+}
+#connav {
+    
+    padding-top: 0;
+    font-size: 1.2em;
+    padding-right: 2rem;
+    background-color: #494ca2;
+    
+}
+
+.navbar-collapse{
+    margin-left: 1rem;
+}
+#four .card-body {
+    
+    background-color: #8186d5;
+}
+#navbarResponsive a{
+    color: #fff;
+}
 .card-header{
     font-size: 2em;;
 }
@@ -26,4 +56,14 @@ body{
 }
 .col-md-6{
     padding: 1px;
+}
+
+footer .container {
+    padding: .5rem;
+}
+.logo {
+    /* padding-top: -2rem; */
+    width: 5.5em;
+    height: 5.5em;
+    
 }
