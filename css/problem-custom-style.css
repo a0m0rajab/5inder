@@ -1,5 +1,5 @@
 body{
-    font-family: 'Noto Serif', serif;
+    font-family: 'Kulim Park', sans-serif;
     /* background-color: #494ca2; */
 }
 
@@ -18,7 +18,7 @@ body{
     padding-top: 0;
     font-size: 1.2em;
     padding-right: 2rem;
-    background-color: #494ca2;
+    background-color: rgb(141, 223, 145);
     
 }
 
@@ -27,7 +27,7 @@ body{
 }
 #four .card-body {
     
-    background-color: #8186d5;
+    background-color: lightblue;
 }
 #navbarResponsive a{
     color: #fff;
@@ -45,7 +45,7 @@ body{
 }
 .container,.card {
     
-    background-color: #494ca2;
+    background-color: rgb(96, 136, 103);
     color: #fff;
     border:none;
 }
