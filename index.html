@@ -6,16 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>5inder</title>
   <style>
-  .circle {
-  margin: 36px;
-  display: inline-block;
-  padding: 16px;
-  text-align: center;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 2px solid #1d2087;
-}
+  
  
 .circle::before,
 .circle::after {
@@ -35,10 +26,17 @@
 }
 
 .circle {
+  margin: 36px;
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
    position: relative; 
    z-index: 2; 
-   background-color: #fff;
-  border: 2px solid #5c5eae;
+   /* background-color: #fff; */
+  border: 5px solid white;
   color: #5c5eae; 
   line-height: 50px;
   overflow: hidden;
@@ -57,14 +55,30 @@
   transform: scale(.5);
 }
 .circle:hover::after {
-  background: #5c5eae;
+  background:white;
   border-radius: 50%;
   -webkit-transform: scale(.9);
   transform: scale(.9);
 }
 .earth {
-  background-image: url("https://media.giphy.com/media/mf8UbIDew7e8g/giphy.gif");
-  background-color: #cccccc;
+  /* background-image: url("https://media.giphy.com/media/mf8UbIDew7e8g/giphy.gif"); */
+  /* background-color: #cccccc; */
+}
+.overlay{
+  position: absolute;
+    top: 25%;
+    /* left: 0; */
+    z-index: 1;
+}
+video{
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+}
+.page-footer {
+  background-color: white;
+
 }
 
   </style>
@@ -76,8 +90,12 @@
 
 </header>
 <main>
-<section class="container h-100 earth ">
-        <div class="row align-items-center">
+<section class="container vh-100 earth ">
+  <video autoplay="autoplay" loop="loop" muted="true" width="100%" style="z-index: -1;">
+    <source src="/videos/water.mp4" type="video/mp4">
+      <div>test</div>
+    </video>
+        <div class="row align-items-center overlay">
           <div class="col-12 col-md-3">
            <div class="circle">
           
