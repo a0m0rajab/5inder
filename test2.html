@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  /* position: fixed; */
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #f1f1f1;
+  /* width: 100%; */
+
+  /* padding: 20px; */
+  /* overflow-y: scroll; */
+  text-align: center;
+
+}
+
+
+.circle {
+  margin: 36px;
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+   position: relative; 
+   z-index: 2; 
+   /* background-color: #fff; */
+  border: 5px solid white;
+  color:white; 
+  line-height: 50px;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 350%;
+}
+
+.center{
+  vertical-align: baseline;
+  vertical-align: -webkit-baseline-middle;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="videos/water.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content center">
+  <br>
+
+  <h1>Climate change</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi reiciendis aliquam doloribus dicta obcaecati. Possimus eum tenetur voluptate quisquam nemo totam. Sequi voluptas placeat alias, aspernatur asperiores earum distinctio architecto?</p>
+  <a  class="center" href="./problems.html"> <h1 class="circle">Problems</h1></a>
+  <a  class="center" href="./solutions.html"> <h1 class="circle">Events</h1></a>
+  <a  class="center" href="./events.html"> <h1 class="circle">Solutions</h1></a>
+  <a  class="center" href="./AboutUs.html"> <h1 class="circle">About Us</h1></a>
+
+
+</div>
+
+
+
+</body>
+</html>

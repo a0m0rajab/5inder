@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>5inder</title>
   <style>
-  
- 
+     /* Circle start... */
 .circle::before,
 .circle::after {
   position: absolute;
@@ -60,157 +59,93 @@
   -webkit-transform: scale(.9);
   transform: scale(.9);
 }
-.earth {
-  /* background-image: url("https://media.giphy.com/media/mf8UbIDew7e8g/giphy.gif"); */
-  /* background-color: #cccccc; */
+/* Circle end */
+  header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
-.overlay{
-  position: absolute;
-    top: 25%;
-    /* left: 0; */
-    z-index: 1;
-}
-video{
-    z-index: -1;
-    width: 100vw;
-    position: absolute;
-    left: 0;
-}
-.page-footer {
-  background-color: white;
 
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+body{
+  background-clip: ;
+}
+
 
   </style>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
-<body class="text-center">
-<header>
-
-</header>
-<main>
-<section class="container vh-100 earth ">
-  <video autoplay="autoplay" loop="loop" muted="true" width="100%" style="z-index: -1;">
-    <source src="/videos/water.mp4" type="video/mp4">
-      <div>test</div>
+<body>
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="videos/water.mp4" type="video/mp4">
     </video>
-        <div class="row align-items-center overlay">
-          <div class="col-12 col-md-3">
-           <div class="circle">
-          
-
-           </div>
-          </div>
-          <div class="col-12 col-md-3">
-            <div class="circle">
-          
-
-            </div>              
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div class="circle">
-          
-
-            </div>              
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div class="circle">
-                
-                <p>hi</p>
-            </div>              
-          </div>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+        <a href="test.com">  <h1 class="display-3 circle">Video Header</h1></a>
         </div>
-
-</section>
-
-</main>
- <!-- Footer -->
-<footer class="page-footer font-small blue pt-4 row">
-
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
-
+        <div class="w-100 text-white">
+          <h1 class="display-3 circle">Video Header</h1>
+        </div>
+        <div class="w-100 text-white">
+          <h1 class="display-3 circle">Video Header</h1>
+        </div>
+        <div class="w-100 text-white">
+          <h1 class="display-3 circle">Video Header</h1>
+        </div>
       </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-</div>
-
-
+  </header>
+  
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+          <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+          <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+          <p class="mb-0">
+            Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 
